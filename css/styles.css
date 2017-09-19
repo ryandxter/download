@@ -1,0 +1,164 @@
+
+
+/* HTML theme */
+
+html {
+    font-size: 0.35cm;
+}
+
+body {
+    color: #444444;
+    background-color: #333333;
+    font-family: 'Open Sans', sans-serif;
+}
+
+section {
+    margin: 0;
+}
+
+section + section {
+    margin-top: 0.5cm;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #222222;
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 1.1rem;
+    color: #888888;
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+}
+
+h3 {
+    color: #bbbbbb;
+    border-bottom: 1px solid #bbbbbb;
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+h4 {
+    margin: 0 0 0.2cm 0;
+}
+
+p {
+    margin: 0;
+    line-height: 1.3em;
+}
+
+p + p {
+    margin-top: 0.3cm;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    line-height: 2em;
+}
+
+/* Utility classes */
+
+.page-a4 {
+    background-color: #ffffff;
+}
+
+@media screen {
+    .page-a4 {
+        margin: 1cm auto;
+        border: 1px solid #cccccc;
+        padding: 1cm;
+        max-width: 20cm;
+        box-shadow: 0 0 0.5cm rgba(0, 0, 0, 1);
+    }
+
+    .page-a4 + .page-a4 {
+        margin-top: -0.5cm;
+    }
+}
+
+@media screen and (min-width: 20cm) {
+    .page-a4 {
+        height: 25cm;
+    }
+}
+
+@media print {
+    .page-a4 {
+        page-break-after: always;
+    }
+}
+
+.row {
+    display: flex;
+    /*justify-content: space-between;*/
+    flex-wrap: wrap;
+    margin: 0 -0.25cm;
+}
+
+.col {
+    flex-grow: 1;
+    padding: 0 0.25cm;
+    box-sizing: border-box;
+}
+
+.col-10 { width: 10%; }
+.col-20 { width: 20%; }
+.col-30 { width: 30%; }
+.col-40 { width: 40%; }
+.col-50 { width: 50%; }
+.col-60 { width: 60%; }
+.col-70 { width: 70%; }
+.col-80 { width: 80%; }
+.col-90 { width: 90%; }
+
+.align-right {
+    text-align: right;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+/* Content */
+
+header.row {
+    align-items: center;
+}
+
+.avatar {
+    height: 2cm;
+    border-radius: 50%;
+}
+
+.logo {
+    display: inline-block;
+    width: 0.5cm;
+    padding-right: 0.2cm;
+    text-align: center;
+}
+
+.logo img {
+    max-width: 0.5cm;
+    max-height: 0.5cm;
+    vertical-align: middle;
+}
+
+.dates {
+    padding-left: 0.2cm;
+    font-weight: normal;
+}
+
+.additional {
+    font-weight: normal;
+    color: #aaaaaa;
+}
